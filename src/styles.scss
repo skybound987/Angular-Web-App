@@ -1,0 +1,14 @@
+:root {
+  /* custom color scheme */
+  --color1: #d9dad7; 
+  --color2: #c24d2c; 
+  --color3: #3e4a61; 
+  --color4: #1a2639;
+}
+
+body {  // Basic styling for the body, mainly affects the SVG map color
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color1);
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,47 @@
+<main>
+  <h1>World Statistics</h1>
+  <p style="padding: 5px;">Hover over an area to see various facts about a country.</p>
+  <div class="container">
+    <div class="info-column">
+      <div *ngIf="countryInfo">
+        <div class="info-flex">
+          <p>Name:</p>
+          <p class="info-color">{{ countryInfo.name }}</p>
+        </div>
+
+        <div class="info-flex">
+          <p>Country ID:</p>
+          <p class="info-color">{{ countryInfo.id }}</p>
+        </div>
+
+        <div class="info-flex">
+          <p>Region:</p>
+          <p class="info-color">{{ countryInfo.region.value }}</p>
+        </div>
+
+        <div class="info-flex">
+          <p>Income:</p>
+          <p class="info-color">{{ countryInfo.incomeLevel.value }}</p>
+        </div>
+
+        <div class="info-flex">
+          <p>Capital:</p>
+          <p class="info-color">{{ countryInfo.capitalCity }}</p>
+        </div>
+
+        <div class="info-flex">
+          <p>Longitude:</p>
+          <p class="info-color">{{ countryInfo.longitude }}</p>
+        </div>
+
+        <div class="info-flex">
+          <p>Latitude:</p>
+          <p class="info-color">{{ countryInfo.latitude }}</p>
+        </div>
+      </div>  
+    </div>
+    <div class="map-column">
+      <app-map (countryData)="handleCountryData($event)"></app-map>
+    </div>
+  </div>     
+</main>

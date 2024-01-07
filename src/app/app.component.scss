@@ -1,0 +1,48 @@
+:root {
+  // custom color scheme
+  --color1: #d9dad7; 
+  --color2: #c24d2c; 
+  --color3: #3e4a61; 
+  --color4: #1a2639;
+}
+
+main {
+  background-color: var(--color3);
+  color: var(--color1);
+}
+
+h1 {
+  color: var(--color2);
+  margin: auto;
+  padding: 10px;
+}
+
+.container {  // Basic styles for the container
+  display: flex;
+  height: 100%;
+}
+
+.info-column {  // Style for the info column on the left hand side
+  width: 15%; 
+  color: var(--color1);
+  background-color: var(--color4); 
+  padding: 20px;
+  box-sizing: border-box;
+}
+  
+.map-column {  // Style for the SVG map itself
+  width: 100%; 
+  height: auto;
+  background-color: gray; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.info-flex {  // For the information window to appear side by side with the extracted data from the API call
+  display: flex;
+}
+
+.info-color {  // Colors the data for ease of viewing
+  color:  var(--color2);
+  margin-left: 10px;
+}

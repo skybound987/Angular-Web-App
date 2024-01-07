@@ -1,0 +1,25 @@
+#svg-map {
+  overflow-y: auto;
+}
+
+#svg-map path:hover {  // Styling for the map hover, highlights the map when hovering
+  fill: burlywood;
+}
+
+.tooltip {  //  Initially added to test functionality and kept because it looked nice
+  position: fixed;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 5px;
+  z-index: 1000; // Ensures it appears above other elements
+}
+
+.tooltip-show {
+  display: block;
+}
+
+.map-container {
+  overflow-y: auto;
+  width: 75%;
+  height: auto;
+}
