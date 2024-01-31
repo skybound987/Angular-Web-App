@@ -12,3 +12,5 @@ const bootstrapConfig = {  // initializes the configuration constant for Bootstr
 
 bootstrapApplication(AppComponent, bootstrapConfig) // This enables bootstrap services to called on and function within the application
   .catch((err) => console.error(err)); // logs error to the developer console in the browser
+
+// attempting to push commit to force language update for GitHub language bar
