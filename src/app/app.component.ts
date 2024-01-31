@@ -30,3 +30,5 @@ export class AppComponent {
     this.countryInfo = data;
   }
 }
+
+// attempting to push commit to force language update for GitHub language bar
